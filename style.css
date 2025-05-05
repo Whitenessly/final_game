@@ -35,6 +35,7 @@ body{
     border-radius: 5px;
     font-size: 0.8rem;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 }
 .gameplay{
     display: flex;
