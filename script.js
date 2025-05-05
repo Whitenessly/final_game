@@ -25,7 +25,7 @@ let elapsedTime = 0;
 
 function startTimer() {
     startTime = Date.now() - elapsedTime;
-    timer = setInterval(update, checking, 1000);
+    timer = setInterval(update, 1000);
 }
 function stopTimer() {
     clearInterval(timer);
@@ -48,6 +48,7 @@ function update() {
     second = String(second).padStart(2, "0");
 
     display.textContent = `${minute}:${second}`;
+    checking();
 }
 
 function swap() {
