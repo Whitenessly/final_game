@@ -25,7 +25,7 @@ let elapsedTime = 0;
 
 function startTimer() {
     startTime = Date.now() - elapsedTime;
-    timer = setInterval(update, 1000);
+    timer = setInterval(update, checking, 1000);
 }
 function stopTimer() {
     clearInterval(timer);
@@ -48,7 +48,6 @@ function update() {
     second = String(second).padStart(2, "0");
 
     display.textContent = `${minute}:${second}`;
-    checking();
 }
 
 function swap() {
@@ -110,7 +109,7 @@ document.addEventListener("keydown", (n) => {
 function checkvar() {
     const squares = document.querySelectorAll(".square");
     for (let i = 1; i <= 11; i++) {
-        let n = parseInt(squares[i].textContent);
+        let n = parseInt(squares[i-1].textContent);
         if (n != i) {
             return 0;
         }
