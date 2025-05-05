@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/3f19084f92.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="btn">Bắt đầu</div>
+        <div class="gameplay">
+            <div class="left">
+                <div class="square bg-green-100 text-green-500">1</div>
+                <div class="square bg-red-100 text-red-500">2</div>
+                <div class="square bg-blue-100 text-blue-500">3</div>
+                <div class="square bg-purple-100 text-purple-500">4</div>
+                <div class="square bg-pink-100 text-pink-500">5</div>
+                <div class="square bg-yellow-100 text-yellow-500">6</div>
+                <div class="square bg-indigo-100 text-indigo-500">7</div>
+                <div class="square bg-gray-100 text-gray-500">8</div>
+                <div class="square bg-emerald-100 text-emerald-500">9</div>
+                <div class="square bg-amber-100 text-amber-500">10</div>
+                <div class="square bg-lime-100 text-lime-500">11</div>
+                <div class="square bg-black text-black-800 cursor">null</div>
+            </div>
+            <div class="right">
+                <div class="clock bg-green-100 text-black-800">
+                    <h2>Đồng hồ</h2>
+                    <p>00:00</p>
+                </div>
+                <div class="tutorial text-black-800">
+                    <h2>Hướng Dẫn Di Chuyển</h2>
+                    <div class="keypad">
+                        <div class="key"><i class="fa-solid fa-arrow-up"></i></div>
+                        <div class="row">
+                            <div class="key"><i class="fa-solid fa-arrow-left"></i></div>
+                            <div class="key"><i class="fa-solid fa-arrow-down"></i></div>
+                            <div class="key"><i class="fa-solid fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+                    <div class="keypad">
+                        <div class="key">W</div>
+                        <div class="row">
+                            <div class="key">A</div>
+                            <div class="key">S</div>
+                            <div class="key">D</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="his">
+            <h2>Lịch Sử Lượt Chơi</h2>
+            <table>
+                <thead>
+                    <th>#
+                    <th>
+                    <th>Bước đi</th>
+                    <th>Thời gian</th>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
